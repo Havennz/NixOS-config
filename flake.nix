@@ -16,7 +16,7 @@
     flake-parts.follows = "mansaos/flake-parts";
     nixpkgs.follows = "mansaos/nixpkgs";
     mansaos = {
-      url = "git+ssh://forgejo@git-ssh.seikm.com/Seikm/MansaOS.git";
+      url = "git+https://git.seikm.com/Seikm/MansaOS.git";
     };
     hypr-dynamic-cursors = {
       url = "github:VirtCode/hypr-dynamic-cursors/e9056fd4f2b229d9924aa853c4763d6bc314bb34";
