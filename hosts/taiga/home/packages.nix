@@ -85,6 +85,7 @@
     gimp3-with-plugins
     bazaar
     footage
+    spotify
   ];
 
   modules = {
