@@ -51,18 +51,11 @@
 
     vscode = {
       enable = true;
-      userSettings = {
-      ##### VsCode Settings #####
-      ## Commonly Used
-      "files.autoSave" = "afterDelay";
-      "workbench.editor.enablePreview" = true;
-
-      ## Features
-      #### Explorer
-      "explorer.confirmDelete" = false;
-      "explorer.confirmDragAndDrop" = false;
-      "explorer.enableDragAndDrop" = false;
-    };
+      profiles.default.userSettings = {
+        "files.autoSave" = "afterDelay";
+        "workbench.editor.enablePreview" = true;
+        "explorer.confirmDelete" = false;
+      };
     };
 
     eza = {
@@ -97,6 +90,7 @@
   modules = {
     impermanence.directories = [
       ".cache/tealdeer"
+      ".cache/spotify"
     ];
 
     apps = {
