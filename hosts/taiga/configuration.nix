@@ -20,11 +20,11 @@
     system = {
       settings = {
         users = {
-          root.initialPassword = "laele2003";
+          root.initialPassword = "3744";
 
           alec = {
             description = "Alec";
-            initialPassword = "laele2003";
+            initialPassword = "3744";
             shell = config.programs.fish.package;
             hm.config = {
               imports = extralib.umport {

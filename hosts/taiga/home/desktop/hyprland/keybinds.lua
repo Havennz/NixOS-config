@@ -22,15 +22,14 @@ end
 
 ---- Apps
 hl.bind("SUPER + CTRL + T", execApp("alacritty"))
-hl.bind("SUPER + CTRL + E", execApp("nautilus --new-window"))
+hl.bind("SUPER + E", execApp("nautilus --new-window"))
 hl.bind("SUPER + CTRL + C", execApp("code"))
 
 ---- Window management
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind("SUPER + mouse:274", hl.dsp.window.float({ action = "toggle" }))
-hl.bind("ALT + F4", hl.dsp.window.close())
-hl.bind("SUPER + CTRL + B", hl.dsp.window.close())
+hl.bind("SUPER + W", hl.dsp.window.close())
 -- Move
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
