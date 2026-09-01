@@ -45,7 +45,7 @@
             variableRefreshRate = false;
             scale = 1;
             position = {
-              x = -1920;
+              x = -1440;
               y = 0;
             };
             colorManagement = {

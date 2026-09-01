@@ -9,7 +9,7 @@
     "mansaos/home/essential"
   ];
 
-  home.file.".face".source = ./profile.webp;
+  home.file.".face".source = ./profile.png;
 
   modules = {
     impermanence = {
