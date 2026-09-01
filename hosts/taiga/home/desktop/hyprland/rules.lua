@@ -77,7 +77,7 @@ hl.window_rule({ match = { class = "com-jetpackduba-gitnuro-MainKt" }, float = f
 hl.window_rule({ match = { title = "(?i).*vaultwarden.*" }, no_screen_share = true })
 hl.window_rule({ match = { title = "(?i).*goldwarden.*" }, no_screen_share = true })
 hl.window_rule({ match = { title = "(?i).*gmail.*" }, no_screen_share = true })
-hl.window_rule({ match = { title = ".*NOSCREENSHARE.*" }, no_screen_share = true })
+hl.window_rule({ match = { title = ".*puca.*" }, no_screen_share = true })
 hl.window_rule({ match = { class = "net.lutris.Lutris" }, no_screen_share = true })
 hl.window_rule({ match = { class = "org.qbittorrent.qBittorrent" }, no_screen_share = true })
 
