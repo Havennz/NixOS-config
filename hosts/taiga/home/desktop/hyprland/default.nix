@@ -66,8 +66,8 @@ in
           range = 10;
           render_power = 3;
           #sharp = true; # if enabled, will make the shadows sharp, akin to an infinite render power
-          color = "rgba(00000010)";
-          color_inactive = "rgba(00000099)";
+          color = lib.mkForce "rgba(00000010)";
+          color_inactive = lib.mkForce "rgba(00000099)";
         };
       };
 
