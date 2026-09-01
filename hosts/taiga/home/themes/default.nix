@@ -12,7 +12,7 @@
 
   modules.xdgPortal = {
     settings = {
-      accent_color = "#be143f";
+      accent_color = "#1c81da";
     };
     fileChooser.open_file = "Gnome"; # open_file already set all others
   };

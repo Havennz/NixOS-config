@@ -49,6 +49,22 @@
       };
     };
 
+    vscode = {
+      enable = true;
+      userSettings = {
+      ##### VsCode Settings #####
+      ## Commonly Used
+      "files.autoSave" = "afterDelay";
+      "workbench.editor.enablePreview" = true;
+
+      ## Features
+      #### Explorer
+      "explorer.confirmDelete" = false;
+      "explorer.confirmDragAndDrop" = false;
+      "explorer.enableDragAndDrop" = false;
+    };
+    };
+
     eza = {
       enable = true;
       enableFishIntegration = true;
