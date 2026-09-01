@@ -20,7 +20,7 @@
     nix = {
       build.limit-resources.enable = true;
       editor = true;
-      #flake = "/home/alec/NixOS";
+      flake = "/home/alec/NixOS";
     };
 
     # sound.pipewire.latency = "high";

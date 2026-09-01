@@ -8,8 +8,6 @@
 }:
 
 {
-  services.tailscale.enable = true;
-
   imports = extralib.umport {
     path = ./.;
     exclude = [
