@@ -19,7 +19,7 @@ in
       ];
       specialArgs = {
         inherit (inputs) hypr-dynamic-cursors hypr-darkwindow hyprland-contrib;
-      }
+      };
     };
   };
 }
