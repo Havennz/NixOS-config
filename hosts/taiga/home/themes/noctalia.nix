@@ -2,8 +2,6 @@
   osConfig,
   config,
   lib,
-  mkPresets,
-  mkPreset,
   pkgs,
   ...
 }:
@@ -93,7 +91,7 @@ in
     '';
 
     # This module uses a noctalia plugin as a polkit agent.
-    services.hyprpolkitagent.enable = mkPreset false;
+    services.hyprpolkitagent.enable =  false;
 
     # Plugin dependencies
     home.packages =
@@ -130,7 +128,7 @@ in
       # Allow noctalia to manage its own colors in a mutable way
       colors = lib.mkForce { };
 
-      settings = mkPresets {
+      settings =  {
         wallpaper.directory = "${config.home.homeDirectory}/Imagens/Wallpapers";
         location.name = "Piracicaba, SP";
         bar = {
@@ -375,7 +373,7 @@ in
         version = 2;
       };
 
-      pluginSettings = mkPresets (
+      pluginSettings =  (
         {
           privacy-indicator = {
             hideInactive = false;
