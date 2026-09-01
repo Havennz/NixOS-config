@@ -21,7 +21,7 @@
     vscode.enable = false;
   };
 
-  wayland.windowManager.hyprland.settings.decoration.shadow = lib.mkIf config.stylix.enable {
+  wayland.windowManager.hyprland.settings.config.decoration.shadow = lib.mkIf config.stylix.enable {
     color = lib.mkForce "rgba(00000010)";
     color_inactive = lib.mkForce "rgba(00000099)";
   };
