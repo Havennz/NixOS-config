@@ -942,6 +942,7 @@
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "impermanence": "impermanence",
+        "ndg": "ndg",
         "nix-cachyos-kernel": "nix-cachyos-kernel",
         "nix-flatpak": "nix-flatpak",
         "nix-gaming": "nix-gaming",
@@ -962,11 +963,11 @@
         "ucodenix": "ucodenix"
       },
       "locked": {
-        "lastModified": 1788241545,
-        "narHash": "sha256-wbBo4FRnKAHNh84IBNqoBudw23w37WduK+HeDoGbIh0=",
+        "lastModified": 1788382766,
+        "narHash": "sha256-VQi4LNte2c222BcBb0ZoDL6URIXagg9E+Zid0mrNNEc=",
         "ref": "refs/heads/master",
-        "rev": "f300766c4e2bec740409a98388811512c98f9c94",
-        "revCount": 685,
+        "rev": "a1507c1d889a4f6acae84a28951e81f3b5f434a8",
+        "revCount": 688,
         "submodules": true,
         "type": "git",
         "url": "https://git.seikm.com/Seikm/MansaOS.git"
@@ -974,6 +975,27 @@
       "original": {
         "type": "git",
         "url": "https://git.seikm.com/Seikm/MansaOS.git"
+      }
+    },
+    "ndg": {
+      "inputs": {
+        "nixpkgs": [
+          "mansaos",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788116742,
+        "narHash": "sha256-9WtUMkqMsROYBGxCgbYn7sYNQW8Bw9mWtvfEJvWFjNc=",
+        "owner": "feel-co",
+        "repo": "ndg",
+        "rev": "67688135afb846a358f708d69236e0406e725ecd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "ndg",
+        "type": "github"
       }
     },
     "nix-cachyos-kernel": {

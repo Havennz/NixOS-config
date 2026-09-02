@@ -1,8 +1,6 @@
 {
   pkgs,
-  hyprland-contrib,
-  hypr-dynamic-cursors,
-  hypr-darkwindow,
+  inputs,
   ...
 }:
 
@@ -11,13 +9,13 @@
   home.packages = [
     pkgs.hyprpwcenter
     # Screenshot tools
-    hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast # Area picker and screenshot tool
+    inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast # Area picker and screenshot tool
   ];
 
   modules.desktop.hyprland = {
     plugins = [
-      hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors
-      hypr-darkwindow.packages.${pkgs.stdenv.hostPlatform.system}.Hypr-DarkWindow
+      inputs.hypr-dynamic-cursors.packages.${pkgs.stdenv.hostPlatform.system}.hypr-dynamic-cursors
+      inputs.hypr-darkwindow.packages.${pkgs.stdenv.hostPlatform.system}.Hypr-DarkWindow
     ];
 
     settings.config.plugin.dynamic_cursors =  {

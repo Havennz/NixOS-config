@@ -1,9 +1,6 @@
 {
   config,
   extralib,
-  hypr-dynamic-cursors,
-  hypr-darkwindow,
-  hyprland-contrib,
   ...
 }:
 
@@ -36,12 +33,7 @@
 
         stateVersion = "26.05";
       };
-      homeManager = {
-        enable = true;
-        specialArgs = {
-          inherit hypr-dynamic-cursors hypr-darkwindow hyprland-contrib;
-        };
-      };
+      homeManager.enable = true;
     };
     programs.displayManager.sddm.enable = true;
   };

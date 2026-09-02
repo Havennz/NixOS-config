@@ -18,7 +18,9 @@ in
         "mansaos/setup/workstation"
       ];
       specialArgs = {
-        inherit (inputs) hypr-dynamic-cursors hypr-darkwindow hyprland-contrib;
+        inputs = {
+          inherit (inputs) hypr-dynamic-cursors hypr-darkwindow hyprland-contrib;
+        };
       };
     };
   };

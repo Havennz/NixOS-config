@@ -78,8 +78,6 @@ hl.window_rule({ match = { title = "(?i).*vaultwarden.*" }, no_screen_share = tr
 hl.window_rule({ match = { title = "(?i).*goldwarden.*" }, no_screen_share = true })
 hl.window_rule({ match = { title = "(?i).*gmail.*" }, no_screen_share = true })
 hl.window_rule({ match = { title = ".*puca.*" }, no_screen_share = true })
-hl.window_rule({ match = { class = "net.lutris.Lutris" }, no_screen_share = true })
-hl.window_rule({ match = { class = "org.qbittorrent.qBittorrent" }, no_screen_share = true })
 
 ---- Random fixes
 -- Open Steam games on monitor 0 and prevent them from forcing maximize

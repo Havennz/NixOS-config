@@ -86,12 +86,14 @@
     bazaar
     footage
     spotify
+    codex
   ];
 
   modules = {
     impermanence.directories = [
       ".cache/tealdeer"
       ".cache/spotify"
+      ".config/spotify"
     ];
 
     apps = {
