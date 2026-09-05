@@ -66,6 +66,7 @@
     impermanence.directories = [
       ".cache/spotify"
       ".config/spotify"
+      ".local/share/keyrings"
     ];
 
     apps = {

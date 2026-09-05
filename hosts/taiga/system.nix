@@ -12,6 +12,13 @@
     boot = {
       loader = {
         bootloader = "limine";
+        limine = {
+          extraEntries = ''
+            /Windows
+              protocol: efi
+              path: boot():/efi/Microsoft/Boot/bootmgfw.efi
+          '';
+        };
       };
       plymouth.enable = true;
     };
