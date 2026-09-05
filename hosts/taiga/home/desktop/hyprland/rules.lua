@@ -1,26 +1,5 @@
 ---@diagnostic disable: undefined-global
 
----- Generate rules for each workspace on each monitor
-if autoWorkspaceRules.enable then
-	local workspaceCount = 0
-	for _, display in ipairs(displays) do
-		for i = 1, autoWorkspaceRules.countPerMonitor do
-			workspaceCount = workspaceCount + 1
-			local finalTable = {
-				workspace = tostring(workspaceCount),
-				monitor = display.adapter,
-				default = i == 1, -- Set the first workspace on each monitor as default
-			}
-			if autoWorkspaceRules.extraRules[tostring(workspaceCount)] then
-				for key, value in pairs(autoWorkspaceRules.extraRules[tostring(workspaceCount)]) do
-					finalTable[key] = value
-				end
-			end
-			hl.workspace_rule(finalTable)
-		end
-	end
-end
-
 ---- Create opacity tags
 for _, i in ipairs({ 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 }) do
 	local focused = tostring(i)

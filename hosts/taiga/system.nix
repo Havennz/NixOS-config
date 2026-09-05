@@ -5,8 +5,7 @@
 {
   modules.system = {
     kernel = {
-      #kernel = "cachyos-bore-lto";
-      kernel = "latest";
+      kernel = "cachyos-bore-lto";
       scx.scheduler = "scx_lavd";
     };
 

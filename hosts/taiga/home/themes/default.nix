@@ -1,28 +1,18 @@
 {
   config,
   lib,
-  extralib,
   ...
 }:
 
 {
-  imports = extralib.usePresets [
-    "mansaos/theme/home/basic"
-  ];
-
   modules.xdgPortal = {
     settings = {
       accent_color = "#1c81da";
     };
-    fileChooser.open_file = "Gnome"; # open_file already set all others
-  };
-
-  stylix.targets = {
-    vscode.enable = false;
   };
 
   wayland.windowManager.hyprland.settings.config.decoration.shadow = lib.mkIf config.stylix.enable {
-    color = lib.mkForce "rgba(00000010)";
-    color_inactive = lib.mkForce "rgba(00000099)";
+    color = lib.mkOverride 40 "rgba(00000010)";
+    color_inactive = lib.mkOverride 40 "rgba(00000099)";
   };
 }

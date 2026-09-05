@@ -27,9 +27,14 @@
       url = "github:micha4w/Hypr-DarkWindow/87155d40e2ce52df6b22801ea8dd87bb4ed28d6d";
       inputs.hyprland.follows = "mansaos/hyprland";
     };
-    hyprland-contrib = {
-      url = "github:hyprwm/contrib/3dcbce715ae8b93107fa8632db15bf976862a573";
-      inputs.nixpkgs.follows = "mansaos/hyprland/nixpkgs";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+    };
+    mansaos-oobe = {
+      url = "git+https://git.seikm.com/Seikm/MansaOS-OOBE.git";
+      inputs.flake-parts.follows = "flake-parts";
     };
   };
 }

@@ -2,19 +2,20 @@
   extralib,
   ...
 }:
-
 {
   imports = extralib.usePresets [
-    "mansaos/theme/home/noctalia-shell"
-    "mansaos/home/essential"
+    "oobe/home"
   ];
 
-  home.file.".face".source = ./profile.png;
-
+  presets.mansaos-oobe = {
+    profileImage = ./profile.png;
+    excludePackages = [
+      "shadower"
+    ];
+  };
   modules = {
     impermanence = {
       enable = true;
-
       directories = [
         # common user directories
         "Downloads"
@@ -28,15 +29,8 @@
         "NixOS"
       ];
     };
-
     ssh = {
       enable = true;
-    };
-
-    defaultApps = {
-      browser = [ "floorp.desktop" ];
-      audio = [ "mpv.desktop" ];
-      video = [ "mpv.desktop" ];
     };
   };
 }

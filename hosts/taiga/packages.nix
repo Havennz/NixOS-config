@@ -13,23 +13,10 @@
   #  webInterface = false;
   #};
 
+
   modules = {
     programs = {
       apps = {
-        nautilus = {
-          enable = true;
-          extraExtensions = true;
-          settings = {
-            showHiddenFiles = true;
-            dconf = {
-              preferences = {
-                show-delete-permanently = true;
-                show-create-link = true;
-              };
-              icon-view.default-zoom-level = "medium";
-            };
-          };
-        };
         gpu-screen-recorder = {
           enable = true;
           ui.enable = true;

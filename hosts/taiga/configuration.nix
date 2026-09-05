@@ -35,6 +35,5 @@
       };
       homeManager.enable = true;
     };
-    programs.displayManager.sddm.enable = true;
   };
 }

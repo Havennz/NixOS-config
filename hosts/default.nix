@@ -6,6 +6,9 @@
 let
   mkNixosSystem = inputs.mansaos.lib.mkNixosSystemDefaults {
     defaultLocation = ./.;
+    defaultPresetsSources = {
+      oobe = inputs.mansaos-oobe.presets;
+    };
   };
 in
 {
@@ -13,13 +16,16 @@ in
     taiga = mkNixosSystem {
       hostName = "taiga";
       presets = [
-        "mansaos/theme/system/stylix-basic"
-        "mansaos/theme/system/noctalia-shell"
+        "oobe/system"
         "mansaos/setup/workstation"
       ];
       specialArgs = {
         inputs = {
-          inherit (inputs) hypr-dynamic-cursors hypr-darkwindow hyprland-contrib;
+          inherit (inputs)
+            hypr-dynamic-cursors
+            hypr-darkwindow
+            stylix
+            ;
         };
       };
     };
